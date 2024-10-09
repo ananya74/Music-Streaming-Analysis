@@ -5,7 +5,7 @@ import streamlit as st
 
 # Spotify API credentials (replace with your own)
 SPOTIPY_CLIENT_ID = '21d6d83c437c476dad8b3b75f8875f55'
-SPOTIPY_CLIENT_SECRET = 'b543f3e312674f7688c119685c2e6ded'
+SPOTIPY_CLIENT_SECRET = ''
 SPOTIPY_REDIRECT_URI = 'http://localhost:8888/callback'
 
 
