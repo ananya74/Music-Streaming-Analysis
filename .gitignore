@@ -1,0 +1,12 @@
+# Ignore environment and compiled Python files
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore sensitive files
+.env
+
+# Ignore editor-specific files
+.vscode/
+.idea/
