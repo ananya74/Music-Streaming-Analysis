@@ -2,11 +2,15 @@ import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 import pandas as pd
 import streamlit as st
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Spotify API credentials (replace with your own)
-SPOTIPY_CLIENT_ID = '21d6d83c437c476dad8b3b75f8875f55'
-SPOTIPY_CLIENT_SECRET = ''
-SPOTIPY_REDIRECT_URI = 'http://localhost:8888/callback'
+SPOTIPY_CLIENT_ID = os.getenv('SPOTIPY_CLIENT_ID')
+SPOTIPY_CLIENT_SECRET = os.getenv('SPOTIPY_CLIENT_SECRET')
+SPOTIPY_REDIRECT_URI = os.getenv('SPOTIPY_REDIRECT_URI')
 
 
 # Scope to access user's top tracks and artists
